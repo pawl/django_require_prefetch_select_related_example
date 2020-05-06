@@ -1,0 +1,42 @@
+[
+  {
+    "model": "myapp.Song",
+    "pk": 1,
+    "fields": {
+      "title": "Toosie Slide",
+      "artist": 1
+    }
+  },
+  {
+    "model": "myapp.Song",
+    "pk": 2,
+    "fields": {
+      "title": "The Man",
+      "artist": 2
+    }
+  },
+  {
+    "model": "myapp.Song",
+    "pk": 3,
+    "fields": {
+      "title": "Godzilla",
+      "artist": 3
+    }
+  },
+  {
+    "model": "myapp.Song",
+    "pk": 4,
+    "fields": {
+      "title": "Shape Of You",
+      "artist": 4
+    }
+  },
+  {
+    "model": "myapp.Song",
+    "pk": 5,
+    "fields": {
+      "title": "dangerous woman",
+      "artist": 5
+    }
+  }
+]

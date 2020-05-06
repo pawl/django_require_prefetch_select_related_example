@@ -1,0 +1,10 @@
+[
+  {
+    "model": "myapp.Playlist",
+    "pk": 1,
+    "fields": {
+      "title": "Fire Mixtape",
+      "songs": [1, 2, 3, 4, 5]
+    }
+  }
+]
