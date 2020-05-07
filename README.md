@@ -35,6 +35,19 @@ for playlist in models.Playlist.objects.all():
 
 The full example is in this repo.
 
+## Caveats
+
+One issue with doing things this way: it doesn't mix well with code that already has the objects prefetched normally. You'll end up prefetching a 2nd time.
+
+Also, you may end up throwing unexpected fatal exceptions if you don't have test coverage where you implement this.
+
+## Alternatives
+
+* Maybe it's better to do this check only during testing. There's a library called nplusone for that: https://github.com/jmcarp/nplusone
+* Or a decorator that checks for prefetching, like these:
+    * https://github.com/WhatsMyCut/wmcp-django-api/blob/6bd167830e5c534dd9ed551507e01092f574a66a/apps/general/decorators.py#L22-L28
+    * https://github.com/kosz85/django-prefetch-decorator
+
 ## Installation
 
 1. Clone this repository and navigate to the directory.
