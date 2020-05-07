@@ -37,9 +37,9 @@ The full example is in this repo.
 
 ## Caveats
 
-One issue with doing things this way: it doesn't mix well with code that already has the objects prefetched normally. You'll end up prefetching a 2nd time.
-
-Also, you may end up throwing unexpected fatal exceptions if you don't have test coverage where you implement this.
+* It doesn't mix well with code that already has the objects prefetched normally. You'll end up prefetching a 2nd time.
+* Throwing fatal exceptions means you may accidentally throw an unexpected exception if you don't have test coverage where you implement this.
+* Someone who isn't familar with the codebase might forget to use the special method that does the eager loading.
 
 ## Alternatives
 
